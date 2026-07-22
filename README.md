@@ -127,7 +127,7 @@ MCA Student | Front-End Developer | Web Development Enthusiast
 
 GitHub: https://github.com/shravanikulkarni310-w
 
-LinkedIn: https://www.linkedin.com/in/your-profile
+LinkedIn: https://www.linkedin.com/in/shravani-kulkarni-b661972aa
 
 ---
 
