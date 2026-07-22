@@ -125,7 +125,7 @@ This project helps users:
 
 MCA Student | Front-End Developer | Web Development Enthusiast
 
-GitHub: https://github.com/your-username
+GitHub: https://github.com/shravanikulkarni310-w
 
 LinkedIn: https://www.linkedin.com/in/your-profile
 
