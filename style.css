@@ -1,0 +1,591 @@
+/* ==========================================
+   GOOGLE FONT & RESET
+========================================== */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#F3E8DC,#D8C3A5);
+    min-height:100vh;
+    color:#4E342E;
+}
+
+/* ==========================================
+   HEADER
+========================================== */
+
+header{
+    width:100%;
+    height:75px;
+    background:#6D4C41;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:0 50px;
+    color:white;
+    box-shadow:0 5px 20px rgba(0,0,0,.2);
+}
+
+.logo{
+    font-size:28px;
+    font-weight:700;
+    display:flex;
+    align-items:center;
+    gap:12px;
+}
+
+.logo i{
+    font-size:30px;
+    color:#FFD180;
+}
+
+.theme-btn{
+    width:45px;
+    height:45px;
+    border-radius:50%;
+    background:#8D6E63;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.theme-btn:hover{
+    transform:rotate(20deg) scale(1.1);
+    background:#5D4037;
+}
+
+/* ==========================================
+   MAIN LAYOUT
+========================================== */
+
+main{
+    display:grid;
+    grid-template-columns:350px 1fr;
+    gap:25px;
+    padding:25px;
+    height:calc(100vh - 75px);
+}
+
+/* ==========================================
+   LEFT PANEL
+========================================== */
+
+.control-panel{
+    background:rgba(255,255,255,.45);
+    backdrop-filter:blur(12px);
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 30px rgba(0,0,0,.15);
+    overflow-y:auto;
+}
+
+.control-panel h2{
+    text-align:center;
+    margin-bottom:20px;
+    color:#5D4037;
+}
+
+/* ==========================================
+   CONTROL BOX
+========================================== */
+
+.control-box{
+    background:#FFF8F2;
+    padding:18px;
+    border-radius:15px;
+    margin-bottom:20px;
+    box-shadow:0 5px 12px rgba(0,0,0,.08);
+}
+
+.control-box label{
+    display:block;
+    font-weight:600;
+    margin-bottom:10px;
+    color:#6D4C41;
+}
+
+.control-box input{
+    width:100%;
+    padding:12px;
+    border-radius:10px;
+    border:1px solid #C8B6A6;
+    margin-bottom:12px;
+    font-size:15px;
+    transition:.3s;
+}
+
+.control-box input:focus{
+    outline:none;
+    border-color:#6D4C41;
+    box-shadow:0 0 8px rgba(109,76,65,.3);
+}
+
+/* ==========================================
+   BUTTONS
+========================================== */
+
+button{
+    width:100%;
+    padding:12px;
+    border:none;
+    border-radius:10px;
+    cursor:pointer;
+    font-size:15px;
+    font-weight:600;
+    transition:.3s;
+    color:white;
+    margin-top:8px;
+}
+
+button:hover{
+    transform:translateY(-2px);
+}
+
+/* Create Button */
+
+.control-box button{
+    background:#6D4C41;
+}
+
+.control-box button:hover{
+    background:#5D4037;
+}
+
+/* Random */
+
+.random-btn{
+    background:#8D6E63;
+}
+
+.random-btn:hover{
+    background:#795548;
+}
+
+/* Insert */
+
+.insert-btn{
+    background:#A1887F;
+}
+
+.insert-btn:hover{
+    background:#8D6E63;
+}
+
+/* Delete */
+
+.delete-btn{
+    background:#B71C1C;
+}
+
+.delete-btn:hover{
+    background:#8E0000;
+}
+
+/* ==========================================
+   CENTER BUTTONS
+========================================== */
+
+.center-buttons{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-top:25px;
+}
+
+.center-buttons button{
+    width:140px;
+}
+
+.reverse-btn{
+    background:#6D4C41;
+}
+
+.reverse-btn:hover{
+    background:#5D4037;
+}
+
+.reset-btn{
+    background:#9E9E9E;
+}
+
+.reset-btn:hover{
+    background:#757575;
+}
+
+/* ==========================================
+   RIGHT PANEL
+========================================== */
+
+.visualizer{
+    display:flex;
+    flex-direction:column;
+    gap:20px;
+}
+
+/* ==========================================
+   STATS CARDS
+========================================== */
+
+.stats{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:18px;
+}
+
+.card{
+    background:rgba(255,255,255,.5);
+    backdrop-filter:blur(12px);
+    border-radius:18px;
+    padding:20px;
+    text-align:center;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+}
+
+.card i{
+    font-size:30px;
+    color:#6D4C41;
+    margin-bottom:12px;
+}
+
+.card h3{
+    color:#5D4037;
+    margin-bottom:10px;
+}
+
+.card p{
+    font-size:26px;
+    font-weight:bold;
+    color:#3E2723;
+}
+
+.speed-card input{
+    width:100%;
+    margin-top:12px;
+    accent-color:#6D4C41;
+}
+
+/* ==========================================
+   ARRAY VISUALIZATION SECTION
+========================================== */
+
+.array-section{
+    background:rgba(255,255,255,.45);
+    backdrop-filter:blur(12px);
+    border-radius:18px;
+    padding:25px;
+    box-shadow:0 10px 25px rgba(0,0,0,.12);
+    flex:1;
+}
+
+.array-section h2{
+    text-align:center;
+    color:#5D4037;
+    margin-bottom:20px;
+}
+
+#arrayContainer{
+    min-height:220px;
+    display:flex;
+    justify-content:center;
+    align-items:flex-end;
+    flex-wrap:wrap;
+    gap:18px;
+    border:2px dashed #C8B6A6;
+    border-radius:15px;
+    padding:25px;
+    background:#FFFDFB;
+}
+
+/* ==========================================
+   ARRAY BOX
+========================================== */
+
+.bar-wrapper{
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    animation:pop .4s ease;
+}
+
+.bar{
+    width:70px;
+    height:70px;
+    background:linear-gradient(135deg,#8D6E63,#6D4C41);
+    color:white;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius:12px;
+    font-size:22px;
+    font-weight:700;
+    transition:.35s;
+    box-shadow:0 8px 18px rgba(0,0,0,.2);
+}
+
+.bar:hover{
+    transform:translateY(-8px) scale(1.08);
+}
+
+.index{
+    margin-top:8px;
+    font-size:13px;
+    font-weight:600;
+    color:#6D4C41;
+}
+
+/* ==========================================
+   ANIMATION CLASSES
+========================================== */
+
+.traverse{
+    background:#A1887F !important;
+    transform:scale(1.12);
+}
+
+.active{
+    background:#4E342E !important;
+    transform:scale(1.18);
+}
+
+.insert-animation{
+    animation:insertPop .5s;
+}
+
+.delete-animation{
+    animation:deleteFade .5s forwards;
+}
+
+
+/* ==========================================
+   TOAST
+========================================== */
+
+#toast{
+    position:fixed;
+    bottom:30px;
+    right:30px;
+    background:#6D4C41;
+    color:white;
+    padding:14px 22px;
+    border-radius:10px;
+    font-weight:600;
+    opacity:0;
+    pointer-events:none;
+    transition:.4s;
+    box-shadow:0 10px 25px rgba(0,0,0,.25);
+    z-index:999;
+}
+
+#toast.show{
+    opacity:1;
+}
+
+/* ==========================================
+   ANIMATIONS
+========================================== */
+
+@keyframes pop{
+
+    from{
+        transform:scale(0);
+        opacity:0;
+    }
+
+    to{
+        transform:scale(1);
+        opacity:1;
+    }
+
+}
+
+@keyframes insertPop{
+
+    0%{
+        transform:scale(.3);
+    }
+
+    70%{
+        transform:scale(1.25);
+    }
+
+    100%{
+        transform:scale(1);
+    }
+
+}
+
+@keyframes deleteFade{
+
+    to{
+        opacity:0;
+        transform:scale(0);
+    }
+
+}
+
+@keyframes slideIn{
+
+    from{
+        transform:translateX(-30px);
+        opacity:0;
+    }
+
+    to{
+        transform:translateX(0);
+        opacity:1;
+    }
+
+}
+
+/* ==========================================
+   DARK MODE
+========================================== */
+
+.dark{
+
+    background:#2E2A27;
+    color:white;
+
+}
+
+.dark header{
+    background:#3E2723;
+}
+
+.dark .control-panel,
+.dark .card,
+.dark .history,
+.dark .array-section{
+
+    background:#4E342E;
+    color:white;
+
+}
+
+.dark .control-box{
+
+    background:#5D4037;
+
+}
+
+.dark .control-box input{
+
+    background:#EFEBE9;
+
+}
+
+.dark .history li{
+
+    background:#6D4C41;
+    color:white;
+
+}
+
+.dark .bar{
+
+    background:linear-gradient(135deg,#A1887F,#795548);
+
+}
+
+/* ==========================================
+   RESPONSIVE
+========================================== */
+
+@media(max-width:1000px){
+
+main{
+
+grid-template-columns:1fr;
+
+height:auto;
+
+}
+
+.stats{
+
+grid-template-columns:1fr;
+
+}
+
+.center-buttons{
+
+flex-direction:column;
+
+align-items:center;
+
+}
+
+.center-buttons button{
+
+width:100%;
+
+}
+
+#arrayContainer{
+
+justify-content:center;
+
+}
+
+.history{
+
+height:auto;
+
+}
+
+}
+
+@media(max-width:600px){
+
+header{
+
+padding:0 20px;
+
+}
+
+.logo{
+
+font-size:22px;
+
+}
+
+.bar{
+
+width:55px;
+height:55px;
+font-size:18px;
+
+}
+
+.index{
+
+font-size:11px;
+
+}
+
+.card{
+
+padding:15px;
+
+}
+
+.control-panel{
+
+padding:15px;
+
+}
+
+.array-section{
+
+padding:15px;
+
+}
+
+}
